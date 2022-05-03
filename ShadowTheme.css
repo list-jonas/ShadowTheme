@@ -1,23 +1,12 @@
-/**
- * @name _ShadowTheme
- * @author Shadowcrafter88
- * @version 2.0
- * @description Theme for BetterDiscord.
- * @website https://hex.ddns.net
- * @invite eBvvKEChby
- */
 
- /* Add icons to the settings */
- @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
+:root {
+    --textcolor: #2f3136;
+    --accentcolor: rgb(144, 255, 41);
+    --accentsecondrycolor: rgb(14, 211, 185);
+    --errorcolor: red;
  
- :root {
-     --textcolor: #2f3136;
-     --accentcolor: rgb(144, 255, 41);
-     --accentsecondrycolor: rgb(14, 211, 185);
-     --errorcolor: red;
- 
-     --transitiontime: 0.5s;
-     --borderradius: 20px;
+    --transitiontime: 0.5s;
+    --borderradius: 20px;
  }
  
  
