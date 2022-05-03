@@ -1,140 +1,165 @@
-/* Home */
-.wrapper-3kah-n .childWrapper-1j_1ub {
-	border-radius: 100%;
-    transition: var(--transitiontime);
-}
+/**
+ * @name _ShadowTheme
+ * @author Shadowcrafter88
+ * @version 2.0
+ * @description Theme for BetterDiscord.
+ * @website https://hex.ddns.net
+ * @invite eBvvKEChby
+ */
 
-.wrapper-3kah-n .childWrapper-1j_1ub:hover {
-    transform: rotate(360deg);
-}
-
-.wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub {
-    background: linear-gradient(var(--accentcolor), var(--accentsecondrycolor));
-    color: var(--textcolor);
-    border-radius: var(--borderradius);
-}
-
-
-/* Explor + Add server */
-
-div[data-list-item-id="guildsnav___create-join-button"],
-div[data-list-item-id="guildsnav___guild-discover-button"] {
-	transition: var(--transitiontime) ease;
-	background-color: var(--textcolor) !important;
-	color: var(--accentcolor) !important;
-	border-radius: 100%;
-}
-
-div[data-list-item-id="guildsnav___create-join-button"]:hover,
-div[data-list-item-id="guildsnav___guild-discover-button"]:hover {
-	background-color: rgba(255, 255, 255, 0.116) !important;
-    transform: rotate(90deg);
-    border-radius: var(--borderradius);
-}
-
-
-/* Remove Big Nitro Button */
-[href="/store"] {
-	display: none;
-}
-
-
-/* Put Better Discord stuff at the top */
-.bd-sidebar-header, 
-[aria-controls="settings-tab"], 
-[aria-controls="emotes-tab"], 
-[aria-controls="customcss-tab"], 
-[aria-controls="plugins-tab"],
-[aria-controls="themes-tab"], 
-[aria-controls="themes-tab"]      + .separator-2wx7h6, 
-[aria-controls="pluginrepo-tab"], 
-[aria-controls="pluginrepo-tab"] + .separator-2wx7h6, 
-[aria-controls="themerepo-tab"] + .separator-2wx7h6, 
-[aria-controls="themerepo-tab"] {
-  order: -1;
-}
-
-
-/* Screen sharing, Camera */
-.button-1EGGcP {
-    box-shadow: inset 0 0 0 0 var(--accentsecondrycolor);
-    transition: color var(--transitiontime) ease-in-out, box-shadow var(--transitiontime) ease-in-out;
-}
-
-.button-1EGGcP.buttonActive-Uc1jHx {
-    background: var(--accentcolor) !important;
-    color: var(--textcolor) !important;
-    box-shadow: inset 0 0 0 0 var(--accentsecondrycolor);
-    transition: color var(--transitiontime) ease-in-out, box-shadow var(--transitiontime) ease-in-out;
-}
-
-.button-1EGGcP:hover {
-    box-shadow: inset 150px 0 0 0 var(--accentsecondrycolor);
-    color: var(--textcolor);
-}
-
-/* Disconnect, Stop Streaming, Krisp ...*/
-.button-12Fmur { 
-    transition: var(--transitiontime);
-}
-
-.button-12Fmur:hover {
-    color: var(--errorcolor) !important;
-}
-
-
-/* Settings */
-.item-3XjbnG.themed-2-lozF {
-    opacity: 70%;
-    color: white;
-    transition: var(--transitiontime);
-    border-radius: var(--borderradius);
-}
-
-.item-3XjbnG.themed-2-lozF:hover {
-    box-shadow: 0 1px 0 0 var(--accentcolor);
-} 
-
-.item-3XjbnG.themed-2-lozF.selected-g-kMVV {
-    background: linear-gradient(130deg, var(--accentcolor) 0%, var(--accentsecondrycolor) 100%) !important;
-    color: var(--textcolor) !important;
-} 
-
-/* Channels */
-.content-1gYQeQ {
-    transition: var(--transitiontime);
-    border-radius: var(--borderradius);
-}
-
-.content-1gYQeQ:hover {
-    box-shadow: 0 1px 0 0 var(--accentcolor);
-}
-
-
-/* Connection Quality */
-.inner-llGtyq > .rtcConnectionQualityFine-3zZrSa {
-    height: 10px;
-    width: 40px;
-    background-color: limegreen;
-    color: limegreen;
-    border-radius: var(--borderradius);
-    animation: 3s infinite connection;
-    margin-bottom: 4px;
-}
-
-@keyframes connection {
-    from {
-        margin-left: 0;
-        box-shadow: 100px 0 limegreen;
-    }
-    
-    50% {
-        margin-left: 70%;
-        box-shadow: -100px 0 limegreen;
-    }
-
-    to {
-        margin-left: 0;
-        box-shadow: 100px 0 limegreen;
-    }
-  }
+ /* Add icons to the settings */
+ @import url(https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css);
+ 
+ :root {
+     --textcolor: #2f3136;
+     --accentcolor: rgb(144, 255, 41);
+     --accentsecondrycolor: rgb(14, 211, 185);
+     --errorcolor: red;
+ 
+     --transitiontime: 0.5s;
+     --borderradius: 20px;
+ }
+ 
+ 
+ /* Home */
+ .wrapper-3kah-n .childWrapper-1j_1ub {
+     border-radius: 100%;
+     transition: var(--transitiontime);
+ }
+ 
+ .wrapper-3kah-n .childWrapper-1j_1ub:hover {
+     transform: rotate(360deg);
+ }
+ 
+ .wrapper-3kah-n.selected-1Drb7Z .childWrapper-1j_1ub {
+     background: linear-gradient(var(--accentcolor), var(--accentsecondrycolor));
+     color: var(--textcolor);
+     border-radius: var(--borderradius);
+ }
+ 
+ 
+ /* Explor + Add server */
+ 
+ div[data-list-item-id="guildsnav___create-join-button"],
+ div[data-list-item-id="guildsnav___guild-discover-button"] {
+     transition: var(--transitiontime) ease;
+     background-color: var(--textcolor) !important;
+     color: var(--accentcolor) !important;
+     border-radius: 100%;
+ }
+ 
+ div[data-list-item-id="guildsnav___create-join-button"]:hover,
+ div[data-list-item-id="guildsnav___guild-discover-button"]:hover {
+     background-color: rgba(255, 255, 255, 0.116) !important;
+     transform: rotate(90deg);
+     border-radius: var(--borderradius);
+ }
+ 
+ 
+ /* Remove Big Nitro Button */
+ [href="/store"] {
+     display: none;
+ }
+ 
+ 
+ /* Put Better Discord stuff at the top */
+ .bd-sidebar-header, 
+ [aria-controls="settings-tab"], 
+ [aria-controls="emotes-tab"], 
+ [aria-controls="customcss-tab"], 
+ [aria-controls="plugins-tab"],
+ [aria-controls="themes-tab"], 
+ [aria-controls="themes-tab"]      + .separator-2wx7h6, 
+ [aria-controls="pluginrepo-tab"], 
+ [aria-controls="pluginrepo-tab"] + .separator-2wx7h6, 
+ [aria-controls="themerepo-tab"] + .separator-2wx7h6, 
+ [aria-controls="themerepo-tab"] {
+   order: -1;
+ }
+ 
+ 
+ /* Screen sharing, Camera */
+ .button-1EGGcP {
+     box-shadow: inset 0 0 0 0 var(--accentsecondrycolor);
+     transition: color var(--transitiontime) ease-in-out, box-shadow var(--transitiontime) ease-in-out;
+ }
+ 
+ .button-1EGGcP.buttonActive-Uc1jHx {
+     background: var(--accentcolor) !important;
+     color: var(--textcolor) !important;
+     box-shadow: inset 0 0 0 0 var(--accentsecondrycolor);
+     transition: color var(--transitiontime) ease-in-out, box-shadow var(--transitiontime) ease-in-out;
+ }
+ 
+ .button-1EGGcP:hover {
+     box-shadow: inset 150px 0 0 0 var(--accentsecondrycolor);
+     color: var(--textcolor);
+ }
+ 
+ /* Disconnect, Stop Streaming, Krisp ...*/
+ .button-12Fmur { 
+     transition: var(--transitiontime);
+ }
+ 
+ .button-12Fmur:hover {
+     color: var(--errorcolor) !important;
+ }
+ 
+ 
+ /* Settings */
+ .item-3XjbnG.themed-2-lozF {
+     opacity: 70%;
+     color: white;
+     transition: var(--transitiontime);
+     border-radius: var(--borderradius);
+ }
+ 
+ .item-3XjbnG.themed-2-lozF:hover {
+     box-shadow: 0 1px 0 0 var(--accentcolor);
+ } 
+ 
+ .item-3XjbnG.themed-2-lozF.selected-g-kMVV {
+     background: linear-gradient(130deg, var(--accentcolor) 0%, var(--accentsecondrycolor) 100%) !important;
+     color: var(--textcolor) !important;
+ } 
+ 
+ /* Channels */
+ .content-1gYQeQ {
+     transition: var(--transitiontime);
+     border-radius: var(--borderradius);
+ }
+ 
+ .content-1gYQeQ:hover {
+     box-shadow: 0 1px 0 0 var(--accentcolor);
+ }
+ 
+ 
+ /* Connection Quality */
+ .inner-llGtyq > .rtcConnectionQualityFine-3zZrSa {
+     height: 10px;
+     width: 40px;
+     background-color: limegreen;
+     color: limegreen;
+     border-radius: var(--borderradius);
+     animation: 3s infinite connection;
+     margin-bottom: 4px;
+ }
+ 
+ @keyframes connection {
+     from {
+         margin-left: 0;
+         box-shadow: 100px 0 limegreen;
+     }
+     
+     50% {
+         margin-left: 70%;
+         box-shadow: -100px 0 limegreen;
+     }
+ 
+     to {
+         margin-left: 0;
+         box-shadow: 100px 0 limegreen;
+     }
+   }
+ 
+ 
