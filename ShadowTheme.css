@@ -6,10 +6,10 @@
     --transitiontime: 0.5s;
     --borderradius: 20px;
     /* Advanced settings */
-    --homecolor1: var(--accentcolor);
-    --homecolor2: var(--accentsecondrycolor);
-    --hometransitiontime: var(--transitiontime);
-    --hometextcolor: var(--textcolor);
+    --homecolor1: rgb(144, 255, 41);
+    --homecolor2: rgb(14, 211, 185);
+    --hometransitiontime: 0.5s;
+    --hometextcolor: #2f3136;
     --homeanimation: rotate(360deg);
 }
 
