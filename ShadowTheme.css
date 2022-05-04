@@ -128,6 +128,7 @@ div[data-list-item-id="guildsnav___guild-discover-button"]:hover {
 .content-1gYQeQ {
     transition: var(--transitiontime);
     border-radius: var(--borderradius);
+    max-height: 40px;
 }
 
 .content-1gYQeQ:hover {
