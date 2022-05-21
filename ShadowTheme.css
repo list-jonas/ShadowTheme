@@ -111,6 +111,9 @@ div[data-list-item-id="guildsnav___guild-discover-button"]:hover {
     color: white;
     transition: var(--transitiontime);
     border-radius: var(--borderradius);
+    max-height: 29px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .item-3XjbnG.themed-2-lozF:hover {
