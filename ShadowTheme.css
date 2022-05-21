@@ -11,6 +11,7 @@
     --hometransitiontime: 0.5s;
     --hometextcolor: #2f3136;
     --homeanimation: rotate(360deg);
+    --channelheight: 30px;
 }
 
 
@@ -131,7 +132,7 @@ div[data-list-item-id="guildsnav___guild-discover-button"]:hover {
 .content-1gYQeQ {
     transition: var(--transitiontime);
     border-radius: var(--borderradius);
-    max-height: 10px;
+    max-height: var(--channelheight);
 }
 
 .content-1gYQeQ:hover {
