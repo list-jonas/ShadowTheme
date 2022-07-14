@@ -139,7 +139,7 @@ div[data-list-item-id="guildsnav___guild-discover-button"]:hover {
     box-shadow: 0 1px 0 0 var(--accentcolor);
 }
 
-/* Live, Bars */
+/* Live, Bars, Public */
 
 .live-1V2D-f, .barFill-2Bh7CX, #bd-pub-button:hover {
     background: linear-gradient(130deg, var(--accentcolor) 0%, var(--accentsecondrycolor) 100%) !important;
