@@ -14,10 +14,12 @@
     --hometextcolor:            var(--accentcolor);
     --homeanimation:            rotate(360deg);
     --channelheight:            30px;
+    --livecolor1:             rgb(144, 255, 41);
+    --livecolor2:             rgb(14, 211, 185);
+    --livetextcolor:          #2f3136;
     /* Settings Modal */
-    --settingsmodalbackground: 	transparent;
-	--settingsmodalwidth: 		960px;
-	--settingsmodalheight: 		80vh;
+	--settingsmodalwidth: 		70vw;
+	--settingsmodalheight: 		90vh;
 }
 
 
@@ -145,6 +147,10 @@ div[data-list-item-id="guildsnav___guild-discover-button"]:hover {
 .live-1V2D-f, .barFill-2Bh7CX, #bd-pub-button:hover {
     background: linear-gradient(130deg, var(--accentcolor) 0%, var(--accentsecondrycolor) 100%) !important;
     color: var(--textcolor);
+}
+.live-1V2D-f {
+    background: linear-gradient(130deg, var(--livecolor1) 0%, var(--livecolor2) 100%) !important;
+    color: var(--livetextcolor)
 }
 
 /* Settings modal */
